@@ -25,4 +25,5 @@ document.addEventListener("click", function(){
 numWords.addEventListener("change", function(){
     passphrase.innerText = addWords(numWords.value, "")
     console.log(passphrase.innerText)
+    console.log(numWords.value)
 });
