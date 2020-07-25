@@ -13,7 +13,7 @@ const addWords = (words, phrase) => {
     }
     return phrase
 }
-result = addWords(5, "")
+var result = addWords(5, "")
 // make function, input num words needed
 console.log(result)
 
