@@ -8,7 +8,7 @@ function getRandomInt() {
 
 const addWords = (words, phrase) => {
     for (var i = 0; i < words; i++) {
-        word = anArrayOfEnglishWords[getRandomInt()]
+        var word = anArrayOfEnglishWords[getRandomInt()]
         phrase += word + " "
     }
     return phrase
