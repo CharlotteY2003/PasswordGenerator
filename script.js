@@ -17,7 +17,7 @@ const addWords = (words, phrase) => {
 // make function, input num words needed
 
 
-document.addEventListener("click", function(){
+document.addEventListener("load", function(){
     passphrase.innerText = addWords(5, "")
     console.log(passphrase.innerText)
 }); 
