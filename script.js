@@ -5,7 +5,7 @@ function getRandomInt() {
 }
 
 var anArrayOfEnglishWords = require("an-array-of-english-words")
-
+console.log(words.filter(d => /fun/.test(d)))
 const addWords = (words, phrase) => {
     for (var i = 0; i < words; i++) {
         word = anArrayOfEnglishWords[getRandomInt()]
