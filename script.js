@@ -1,14 +1,14 @@
 var passphrase = document.getElementById("passphrase")
 
 function getRandomInt() {
-  return Math.floor(Math.random() * Math.floor(636598));
+  return Math.floor(Math.random() * Math.floor(274937));
 }
 
 var anArrayOfEnglishWords = require("an-array-of-english-words")
 
 const addWords = (words, phrase) => {
     for (var i = 0; i < words; i++) {
-        word = anArrayOfSpanishWords[getRandomInt()]
+        word = anArrayOfEnglishWords[getRandomInt()]
         phrase += word + " "
     }
     return phrase
