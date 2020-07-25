@@ -5,8 +5,11 @@
   </head>
   <body>
     <h1 id="passphrase"></h1>
+    
     <label class = "numberWordLabel">Select how many words you want for the password</label>
+    
     <select class="numWords" id="numWords">
+      
       <option value=1>1</option>
       <option value=2>2</option>
       <option value=3>3</option>
@@ -17,16 +20,17 @@
       <option value=8>8</option>
       
     </select>
+    
     <label class = "languageLabel">Select the language you want to passwordpase to be in:</label>
+    
     <select class="languages">
 
       <option value="fr">French</option>
       <option value = "es">Spanish</option>
+      <option value = "en">English</option>
 
     </select>
-    <label>Your new password is: </label>
-    <label class="passphraseReturn" id="passphraseReturn"></label>
-    <label class = "passphraseEn" id="passphraseEnglish"></label> <!--Once passphrase generated, would type "in English it means:"-->
+    
     <button class="reload" id="reloadButton" onclick="getReload()">Reload</button>
     
     <script src="script.js" type="module"></script> 
