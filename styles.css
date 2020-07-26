@@ -1,1 +1,16 @@
+body {
+  background-color: #000000;
+}
 
+h1 {
+    font-size: 4rem;
+    margin: 2rem 0;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    color: #FFFFFF;
+}
