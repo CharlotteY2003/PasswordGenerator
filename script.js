@@ -22,7 +22,7 @@ const getRandomInt = (language) => {
 }
 
 const constainsSpecialChar = (word) => {
-    for (var i = 0; i < words; i++) {
+    for (var i = 0; i < word; i++) {
         for (var j = 0; j < specialChar; i++) {
             if (words[i] == specialChar[j]) {
                 return false
