@@ -24,7 +24,7 @@ const getRandomInt = (language) => {
 const constainsSpecialChar = (word) => {
     for (var i = 0; i < words; i++) {
         for (var j = 0; j < specialChar; i++) {
-            if words[i] == specialChar[j] {
+            if (words[i] == specialChar[j]) {
                 return false
             }
         }
@@ -43,7 +43,7 @@ const addWordsEn = (words, phrase) => {
 const addWordsEs = (words, phrase) => {
     for (var i = 0; i < words; i++) {
         var word = anArrayOfSpanishWords[getRandomInt("es")]
-        if constainsSpecialChar(word) {
+        if (constainsSpecialChar(word)) {
             i += 1
         } else {
             phrase += word + " "
@@ -55,7 +55,7 @@ const addWordsEs = (words, phrase) => {
 const addWordsFr = (words, phrase) => {
     for (var i = 0; i < words; i++) {
         var word = anArrayOfFrenchWords[getRandomInt("fr")]
-        if constainsSpecialChar(word) {
+        if (constainsSpecialChar(word)) {
             i += 1
         } else {
             phrase += word + " "
