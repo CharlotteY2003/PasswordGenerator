@@ -1,2 +1,3 @@
 # PasswordGenerator
-Creates passphrase for forgein languages
+Create a passphrase for forgein languages at
+asfalis.gq
