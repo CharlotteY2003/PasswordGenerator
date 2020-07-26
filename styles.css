@@ -24,15 +24,15 @@ h1 {
 option, button {
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
-    background-color: #9800eb;
+    background-color: #000000;
     margin: 0px 10px 0px 10px;
     color: #FFFFFF;
 }
 
 button {
-    border: none;
+    border: 2px solid #FFFFFF;
 }
 
 button:hover {
-    border: 10px solid #9800eb;
+    font-size: 2rem;
 }
