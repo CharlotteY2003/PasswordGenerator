@@ -7,6 +7,7 @@ body {
     align-items: center;
     margin: 100px 50px 50px 50px;
     font-weight: 700;
+    text-align: center;
  }
 
 h1 {
@@ -23,5 +24,9 @@ h1 {
 option, button {
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
-    background-color: #9800eb
+    background-color: #9800eb;
+}
+
+button {
+    margin: 10px 0px 10px 0px;
 }
