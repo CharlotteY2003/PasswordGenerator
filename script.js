@@ -25,7 +25,7 @@ const containsSpecialChar = (word) => {
     for (var i = 0; i < word.length; i++) {
         for (var j = 0; j < specialChar.length; j++) {
             console.log("in i")
-            if (word[i] == specialChar[j]) {
+            if (word.charAt(i) == specialChar.charAt(j)) {
                 console.log("in j")
                 return false
             }
@@ -92,4 +92,12 @@ languages.addEventListener("change", function(){
 
 reload.addEventListener("click", function(){
     update()
+});
+
+passphrase.addEvenListener("click", function(){
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("Copied!");
 });
