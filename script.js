@@ -5,6 +5,7 @@ import { anArrayOfFrenchWords } from './array_fr.js'
 var passphrase = document.getElementById("passphrase")
 var numWords = document.getElementById("numWords")
 var languages = document.getElementById("languages")
+var reload = document.getElementById("reload")
 
 function getRandomInt(language) {
     if (language == "en") {
@@ -56,7 +57,6 @@ const update = () => {
 
 document.addEventListener("load", function(){
     passphrase.innerText = addWordsEn(5, "")
-    console.log(passphrase.innerText)
 }); 
 
 numWords.addEventListener("change", function(){
@@ -65,6 +65,8 @@ numWords.addEventListener("change", function(){
 
 languages.addEventListener("change", function(){
     update()
-    console.log(passphrase.innerText)
-    console.log(numWords.value)
+});
+
+reload.addEventListener("click", function(){
+    update()
 });
