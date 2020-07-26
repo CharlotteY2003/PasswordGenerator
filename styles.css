@@ -1,12 +1,13 @@
 body {
-  background-color: #000000;
-  font-family: Inter, Helvetica, Arial, sans-serif;
-  font-size: 3rem;
-  color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
-  margin: 100px 50px 50px 50px;
-}
+    background-color: #000000;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 50px 50px 50px;
+    font-weight: 700;
+ }
 
 h1 {
     font-size: 4rem;
@@ -16,6 +17,7 @@ h1 {
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    font-weight: 900;
 }
 
 option, button {
