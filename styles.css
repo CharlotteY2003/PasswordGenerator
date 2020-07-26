@@ -1,14 +1,15 @@
 body {
   background-color: #000000;
   font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 3rem;
   color: #FFFFFF;
   justify-content: center;
   align-items: center;
-  margin: 50px 50px 50px 50px;
+  margin: 100px 50px 50px 50px;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 2rem 0;
     word-wrap: break-word;
     word-break: break-word;
