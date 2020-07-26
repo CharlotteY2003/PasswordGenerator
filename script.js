@@ -24,7 +24,9 @@ const getRandomInt = (language) => {
 const containsSpecialChar = (word) => {
     for (var i = 0; i < word.length; i++) {
         for (var j = 0; j < specialChar.length; i++) {
+            console.log("in i")
             if (word[i] == specialChar[j]) {
+                console.log("in j")
                 return false
             }
         }
