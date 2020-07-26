@@ -27,11 +27,11 @@ const containsSpecialChar = (word) => {
             console.log("in i")
             if (word.charAt(i) == specialChar.charAt(j)) {
                 console.log("in j")
-                return false
+                return true
             }
         }
     }
-    return true
+    return false
 }
 
 const addWordsEn = (words, phrase) => {
