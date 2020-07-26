@@ -87,7 +87,7 @@ reload.addEventListener("click", function(){
 });
 
 passphrase.addEventListener("click", function(){
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("passphrase");
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
