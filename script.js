@@ -86,7 +86,7 @@ reload.addEventListener("click", function(){
     update()
 });
 
-passphrase.addEventListener("click", function(){
+passphrase.addEventListener("click", function(e){
   e.clipboardData.setData('text/plain', passphrase.innerText);
   alert("Copied!");
 });
