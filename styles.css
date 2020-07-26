@@ -25,8 +25,9 @@ option, button {
     border-radius: 20px;
     padding: 10px 10px 10px 10px;
     background-color: #9800eb;
+    margin: 0px 10px 0px 10px;
 }
 
 button {
-    margin: 10px 0px 10px 0px;
+    border-color: #9800eb;
 }
