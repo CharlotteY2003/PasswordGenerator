@@ -7,7 +7,9 @@ var numWords = document.getElementById("numWords")
 var languages = document.getElementById("languages")
 var reload = document.getElementById("reload")
 
-function getRandomInt(language) {
+var specialChar = "ùûüÿ€’“”«çéèêëïîô»àâæáíñóú"
+
+const getRandomInt = (language) => {
     if (language == "en") {
         return Math.floor(Math.random() * Math.floor(274937));
     }
@@ -17,6 +19,17 @@ function getRandomInt(language) {
     else if (language == "fr") {
         return Math.floor(Math.random() * Math.floor(336524));
     }
+}
+
+const constainsSpecialChar = (word) => {
+    for (var i = 0; i < words; i++) {
+        for (var j = 0; j < specialChar; i++) {
+            if words[i] == specialChar[j] {
+                return false
+            }
+        }
+    }
+    return true
 }
 
 const addWordsEn = (words, phrase) => {
@@ -30,7 +43,11 @@ const addWordsEn = (words, phrase) => {
 const addWordsEs = (words, phrase) => {
     for (var i = 0; i < words; i++) {
         var word = anArrayOfSpanishWords[getRandomInt("es")]
-        phrase += word + " "
+        if constainsSpecialChar(word) {
+            i += 1
+        } else {
+            phrase += word + " "
+        }
     }
     return phrase
 }
@@ -38,7 +55,11 @@ const addWordsEs = (words, phrase) => {
 const addWordsFr = (words, phrase) => {
     for (var i = 0; i < words; i++) {
         var word = anArrayOfFrenchWords[getRandomInt("fr")]
-        phrase += word + " "
+        if constainsSpecialChar(word) {
+            i += 1
+        } else {
+            phrase += word + " "
+        }
     }
     return phrase
 }
