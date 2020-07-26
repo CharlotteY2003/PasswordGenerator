@@ -45,11 +45,7 @@ const addWordsEn = (words, phrase) => {
 const addWordsEs = (words, phrase) => {
     for (var i = 0; i < words; i++) {
         var word = anArrayOfSpanishWords[getRandomInt("es")]
-        if (containsSpecialChar(word)) {
-            words += 1
-        } else {
-            phrase += word + " "
-        }
+        phrase += word + " "
     }
     return phrase
 }
@@ -57,11 +53,7 @@ const addWordsEs = (words, phrase) => {
 const addWordsFr = (words, phrase) => {
     for (var i = 0; i < words; i++) {
         var word = anArrayOfFrenchWords[getRandomInt("fr")]
-        if (containsSpecialChar(word)) {
-            words += 1
-        } else {
-            phrase += word + " "
-        }
+        phrase += word + " "
     }
     return phrase
 }
