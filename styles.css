@@ -29,5 +29,9 @@ option, button {
 }
 
 button {
-    border-color: #9800eb;
+    border: none;
+}
+
+button:hover {
+    boder: 10px solid #9800eb;
 }
