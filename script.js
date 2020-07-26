@@ -33,7 +33,7 @@ const addWordsEs = (words, phrase) => {
     return phrase
 }
 
-const addWordsEs = (words, phrase) => {
+const addWordsFr = (words, phrase) => {
     for (var i = 0; i < words; i++) {
         var word = anArrayOfFrenchWords[getRandomInt("fr")]
         phrase += word + " "
