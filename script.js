@@ -1,5 +1,6 @@
 import { anArrayOfEnglishWords } from './array.js'
 import { anArrayOfSpanishWords } from './array_es.js'
+import { anArrayOfFrenchWords } from './array_fr.js'
 
 var passphrase = document.getElementById("passphrase")
 var numWords = document.getElementById("numWords")
@@ -46,7 +47,7 @@ const update = () => {
         passphrase.innerText = addWordsEn(numWords.value, "")
     }
     else if (languages.value == "fr") {
-        passphrase.innerText = addWordsEn(numWords.value, "")
+        passphrase.innerText = addWordsFr(numWords.value, "")
     }
     else if (languages.value == "es") {
         passphrase.innerText = addWordsEs(numWords.value, "")
